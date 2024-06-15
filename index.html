@@ -4,13 +4,23 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/styles/style.css" />
 		<title>Vite App</title>
 	</head>
 	<body>
 		<div id="app">
-			<button id="but">click</button>
+			<div class="nums">
+				<div class="min"></div>
+				<div class="minv"></div>
+				<div class="maxv"></div>
+				<div class="max"></div>
+			</div>
+			<div class="wrap">
+				<div class="diapazon"></div>
+				<input min="0" max="100" step="10" type="range" class="custom down" />
+				<input min="0" max="100" step="10" type="range" class="custom up" />
+			</div>
 		</div>
-		<script type="module" src="/script.js"></script>
 	</body>
+	<script type="module" src="/script.js"></script>
 </html>

@@ -1,0 +1,102 @@
+.wrap {
+	position: relative;
+	width: 100%;
+}
+
+.custom {
+	cursor: pointer;
+
+	position: absolute;
+
+	width: 100%;
+	height: 1rem;
+
+	background: transparent;
+
+	/* background: rgb(255 228 196 / 47.4%); */
+}
+
+.down {
+	top: 1rem;
+
+	/* transform: rotate(180deg); */
+
+	/* transform: translateX(-19px); */
+}
+
+.diapazon {
+	position: absolute;
+	top: 0.9rem;
+
+	height: 0.4rem;
+
+	background: var(--bg-sec);
+	border-radius: 0.25rem;
+
+	/* box-shadow: inset 0 0 0 1px var(--hover); */
+}
+
+.custom:hover::-moz-range-track {
+	/* background: rgb(203 208 252); */
+}
+
+.custom:hover::-moz-range-progress {
+	/* box-shadow: inset 0 0 0 1px var(--hover); */
+}
+
+.custom:hover::-moz-range-thumb {
+	border: 2px solid var(--hover);
+}
+
+.custom::-moz-range-track {
+	pointer-events: none;
+	height: 0.5rem;
+
+	/* background: rgb(175 173 173); */
+
+	background: transparent;
+	border-radius: 0.25rem;
+}
+
+.custom::-moz-range-progress {
+	pointer-events: none;
+	height: 0.5rem;
+
+	/* background: var(--bg-sec); */
+
+	background: transparent;
+	border-radius: 0.25rem;
+}
+
+.custom::-moz-range-thumb {
+	background: rgb(44 35 81);
+	border: 2px solid var(--white);
+	border-radius: 50%;
+}
+
+.up::-moz-range-thumb {
+	transform: translateY(0.5rem);
+}
+
+.down::-moz-range-thumb {
+	transform: translateY(-0.5rem);
+}
+
+.nums {
+	display: flex;
+	gap: 1rem;
+}
+
+.min,
+.max,
+.minv,
+.maxv {
+	width: 3.2rem;
+	height: 1.6rem;
+
+	color: black;
+	text-align: center;
+
+	background: var(--white);
+	border-radius: 4px;
+}
