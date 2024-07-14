@@ -1,18 +1,9 @@
 const but = document.querySelector('.but');
 
-function func() {
-	console.log('click');
-	worker.postMessage({ cmd: 'average', data: [1, 2, 3, 4] });
-}
+but.onclick = () => console.log('work');
 
-var worker = new Worker('doWork.js');
+let str = 'exampl23e@test34.c2om.tu.tu';
 
-worker.addEventListener(
-	'message',
-	function (e) {
-		console.log('!!', e.data);
-	},
-	false,
-);
+let reg = /^[a-zA-Z0-9А-ЯЁё]+@[a-zA-Z0-9А-ЯЁё]+[\\.a-zA-Z0-9А-ЯЁё]+$/;
 
-but.onclick = func;
+console.log(reg.test(str));
