@@ -90,3 +90,7 @@ function translit(word) {
 
 	return answer;
 }
+
+let n = [];
+
+console.log(JSON.stringify([...new Set(n)]));
