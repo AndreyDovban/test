@@ -1,0 +1,173 @@
+{
+    "memberOf": [
+        "cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+        "cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+        "cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+        "cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+        "cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+        "cn=____aguschin3_v4l1xzquckr1x9hiw,cn=users_history,cn=accounts,dc=granulex,dc=test",
+        "cn=test-1,cn=groups,cn=accounts,dc=granulex,dc=test"
+    ],
+    "ipaNTSecurityIdentifier": [
+        "S-1-5-21-1194863518-2697306186-2628483042-3333"
+    ],
+    "proxyAddresses": [
+        "SMTP:____AGUSCHIN3@GRANULEX.TEST"
+    ],
+    "mepManagedEntry": [
+        "cn=____aguschin3,cn=groups,cn=accounts,dc=granulex,dc=test"
+    ],
+    "krbExtraData": [
+        {
+            "__base64__": "AAJqLqJmcm9vdC9hZG1pbkBHUkFOVUxFWC5URVNUAA=="
+        }
+    ],
+    "krbLastPwdChange": [
+        "20240725105226Z"
+    ],
+    "krbPasswordExpiration": [
+        "20240725105226Z"
+    ],
+    "cn": [
+        "Антон Гущин"
+    ],
+    "displayName": [
+        "Антон Гущин"
+    ],
+    "initials": [
+        "А Г"
+    ],
+    "gecos": [
+        "Антон Гущин"
+    ],
+    "street": [
+        "Baker Stree"
+    ],
+    "l": [
+        "Chelyabinsk"
+    ],
+    "postalCode": [
+        "654457"
+    ],
+    "mobile": [
+        "+1 818 702-4468"
+    ],
+    "pager": [
+        "+1 808 116-5649"
+    ],
+    "facsimileTelephoneNumber": [
+        "+1 415 895-3314"
+    ],
+    "ou": [
+        "Product Testing"
+    ],
+    "carLicense": [
+        "AA377F"
+    ],
+    "ipaUserAuthType": [
+        "password"
+    ],
+    "departmentNumber": [
+        "30"
+    ],
+    "employeeNumber": [
+        "47697"
+    ],
+    "employeeType": [
+        "Writer"
+    ],
+    "preferredLanguage": [
+        "ru"
+    ],
+    "rbtadp": [
+        "ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"
+    ],
+    "rbtaou": [
+        "granulex.test"
+    ],
+    "objectClass": [
+        "top",
+        "person",
+        "organizationalperson",
+        "inetorgperson",
+        "inetuser",
+        "posixaccount",
+        "krbprincipalaux",
+        "krbticketpolicyaux",
+        "ipaobject",
+        "ipasshuser",
+        "x-ald-user",
+        "x-ald-user-parsec14",
+        "x-ald-audit-policy",
+        "rbta-unit",
+        "rbta-address",
+        "rbtaCustomUserAttrs",
+        "rbta-inetorgperson-ext",
+        "ruPostMailAccount",
+        "rbtaUserMeta",
+        "ipauserauthtypeclass",
+        "ipaSshGroupOfPubKeys",
+        "mepOriginEntry",
+        "ipantuserattrs"
+    ],
+    "xaldusermacmax": [
+        "0"
+    ],
+    "xaldusermacmin": [
+        "0"
+    ],
+    "ipaUniqueID": [
+        "fbeb5ee2-4a73-11ef-a43f-52540055cb14"
+    ],
+    "krbPrincipalKey": [
+        {
+            "__base64__": "MIHeoAMCAQGhAwIBAaIDAgEBowMCAQGkgccwgcQwaKAbMBmgAwIBBKESBBA7Qy87QzpeXTctVnNlRVdqoUkwR6ADAgESoUAEPiAABogoJNzo1c8Hbl71uPSQ6/RnDelLSJCH9udCAvuuUYjEAqt2WLzGCk1HswTNoHNVyNSNKym6LeGRtOSYMFigGzAZoAMCAQShEgQQJ0ZbO1BcLUh8MzIuXUtBL6E5MDegAwIBEaEwBC4QAG9XIzzpE1FWwQbfWvtCcZnPud76lnI/ilTgh7W9e356keGaxe6n0vXMBF5R"
+        }
+    ],
+    "uidnumber": [
+        "390202333"
+    ],
+    "uid": [
+        "____aguschin3"
+    ],
+    "gidnumber": [
+        "390202333"
+    ],
+    "sn": [
+        "Гущин"
+    ],
+    "x-ald-aud-mask": [
+        "0x0:0x0"
+    ],
+    "nsaccountlock": [
+        "FALSE"
+    ],
+    "loginshell": [
+        "/bin/bash"
+    ],
+    "title": [
+        "Junior Warrior"
+    ],
+    "givenname": [
+        "Антон"
+    ],
+    "mail": [
+        "____aguschin3@granulex.test"
+    ],
+    "krbcanonicalname": [
+        "____aguschin3@GRANULEX.TEST"
+    ],
+    "homedirectory": [
+        "/home/____aguschin3"
+    ],
+    "telephonenumber": [
+        "+1 303 102-1770"
+    ],
+    "x-ald-user-mac": [
+        "0:0x0:0:0x0"
+    ],
+    "krbprincipalname": [
+        "____aguschin3@GRANULEX.TEST"
+    ],
+    "dn": "uid=____aguschin3,cn=users,cn=accounts,dc=granulex,dc=test"
+}

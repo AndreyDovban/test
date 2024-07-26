@@ -13,6 +13,10 @@
 	font-synthesis: none;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	display: flex;
 	place-items: center;
@@ -34,7 +38,7 @@ body {
 }
 
 .pre {
-	overflow-y: auto;
+	overflow: auto;
 
 	width: 100%;
 	height: fit-content;
