@@ -1,6 +1,4 @@
 import { json2csv } from 'json-2-csv';
-// import f from './data.json';
-import fields from './fields.json';
 import ex from './example.json';
 
 const but = document.querySelector('.but');
