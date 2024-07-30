@@ -1,0 +1,728 @@
+[
+	{
+		"obj_name": "uid=____apotapov1,cn=users,cn=accounts,dc=granulex,dc=test",
+		"change_type": "changed",
+		"all_attributes": {
+			"carLicense": { "backup_values": ["AA909F"], "ldap_values": ["AA909F"] },
+			"cn": { "backup_values": ["Артём Потапов"], "ldap_values": ["Артём Потапов"] },
+			"departmentNumber": { "backup_values": ["25"], "ldap_values": ["25"] },
+			"displayName": { "backup_values": ["Артём Потапов"], "ldap_values": ["Артём Потапов"] },
+			"employeeNumber": { "backup_values": ["86489"], "ldap_values": ["86489"] },
+			"employeeType": { "backup_values": ["Architect"], "ldap_values": ["Architect"] },
+			"facsimileTelephoneNumber": { "backup_values": ["+1 415 607-9868"], "ldap_values": ["+1 415 458-5545"] },
+			"gecos": { "backup_values": ["Артём Потапов"], "ldap_values": ["Артём Потапов"] },
+			"gidNumber": { "backup_values": ["390202345"], "ldap_values": ["390202345"] },
+			"givenName": { "backup_values": ["Артём"], "ldap_values": ["Артём"] },
+			"homeDirectory": { "backup_values": ["/home/____apotapov1"], "ldap_values": ["/home/____apotapov1"] },
+			"homePhone": { "backup_values": [], "ldap_values": ["+1 303 525-9642"] },
+			"initials": { "backup_values": ["А П"], "ldap_values": ["А П"] },
+			"ipaNTSecurityIdentifier": {
+				"backup_values": ["S-1-5-21-1194863518-2697306186-2628483042-3345"],
+				"ldap_values": ["S-1-5-21-1194863518-2697306186-2628483042-3345"]
+			},
+			"ipaUserAuthType": { "backup_values": ["password"], "ldap_values": ["password"] },
+			"krbCanonicalName": {
+				"backup_values": ["____apotapov1@GRANULEX.TEST"],
+				"ldap_values": ["____apotapov1@GRANULEX.TEST"]
+			},
+			"krbPrincipalName": {
+				"backup_values": ["____apotapov1@GRANULEX.TEST"],
+				"ldap_values": ["____apotapov1@GRANULEX.TEST"]
+			},
+			"l": { "backup_values": ["Ryazan"], "ldap_values": ["Omsk"] },
+			"loginShell": { "backup_values": ["/bin/bash"], "ldap_values": ["/bin/bash"] },
+			"mail": {
+				"backup_values": ["____apotapov1@granulex.test"],
+				"ldap_values": ["____apotapov1@granulex.test"]
+			},
+			"memberOf": {
+				"backup_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____apotapov1_zidofclnpnmxandze,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				],
+				"ldap_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____apotapov1_zidofclnpnmxandze,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				]
+			},
+			"mobile": { "backup_values": ["+1 818 720-5746"], "ldap_values": ["+1 818 236-3380"] },
+			"objectClass": {
+				"backup_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				],
+				"ldap_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				]
+			},
+			"ou": { "backup_values": ["Management"], "ldap_values": ["Human Resources"] },
+			"pager": { "backup_values": ["+1 808 332-9340"], "ldap_values": ["+1 808 370-3898"] },
+			"postalCode": { "backup_values": ["654898"], "ldap_values": ["654761"] },
+			"preferredLanguage": { "backup_values": ["fr"], "ldap_values": ["en"] },
+			"proxyAddresses": {
+				"backup_values": ["SMTP:____APOTAPOV1@GRANULEX.TEST"],
+				"ldap_values": ["SMTP:____APOTAPOV1@GRANULEX.TEST"]
+			},
+			"rbtadp": {
+				"backup_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"],
+				"ldap_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"]
+			},
+			"rbtaou": { "backup_values": ["granulex.test"], "ldap_values": ["granulex.test"] },
+			"sn": { "backup_values": ["Потапов"], "ldap_values": ["Потапов"] },
+			"street": { "backup_values": ["Regent Street"], "ldap_values": ["Regent Street"] },
+			"telephoneNumber": { "backup_values": ["+1 303 100-5115"], "ldap_values": ["+1 303 347-2191"] },
+			"title": {
+				"backup_values": ["Elite Director"],
+				"ldap_values": [
+					"Elite Artist",
+					"Elite Artist",
+					"Elite Artist",
+					"Elite Artist",
+					"Elite Artist",
+					"Elite Artist",
+					"Elite Artist",
+					"Elite Artist",
+					"Elite Artist"
+				]
+			},
+			"uid": { "backup_values": ["____apotapov1"], "ldap_values": ["____apotapov1"] },
+			"uidNumber": { "backup_values": ["390202345"], "ldap_values": ["390202345"] },
+			"x-ald-user-mac": { "backup_values": ["0:0x0:0:0x0"], "ldap_values": ["0:0x0:0:0x0"] },
+			"xaldusermacmax": { "backup_values": ["0"], "ldap_values": ["0"] },
+			"xaldusermacmin": { "backup_values": ["0"], "ldap_values": ["0"] }
+		},
+		"changed_attributes": {
+			"facsimileTelephoneNumber": "0",
+			"homePhone": "0",
+			"l": "0",
+			"mobile": "0",
+			"ou": "0",
+			"pager": "0",
+			"postalCode": "0",
+			"preferredLanguage": "0",
+			"telephoneNumber": "0",
+			"title": "0"
+		}
+	},
+	{
+		"obj_name": "uid=____dburov2,cn=users,cn=accounts,dc=granulex,dc=test",
+		"change_type": "changed",
+		"all_attributes": {
+			"carLicense": { "backup_values": ["AA546F"], "ldap_values": ["AA546F"] },
+			"cn": { "backup_values": ["Даниэль Буров"], "ldap_values": ["Даниэль Буров"] },
+			"departmentNumber": { "backup_values": ["23"], "ldap_values": ["23"] },
+			"displayName": { "backup_values": ["Даниэль Буров"], "ldap_values": ["Даниэль Буров"] },
+			"employeeNumber": { "backup_values": ["58062"], "ldap_values": ["58062"] },
+			"employeeType": { "backup_values": ["Evangelist"], "ldap_values": ["Evangelist"] },
+			"facsimileTelephoneNumber": { "backup_values": ["+1 415 798-3421"], "ldap_values": ["+1 415 250-8078"] },
+			"gecos": { "backup_values": ["Даниэль Буров"], "ldap_values": ["Даниэль Буров"] },
+			"gidNumber": { "backup_values": ["390202346"], "ldap_values": ["390202346"] },
+			"givenName": { "backup_values": ["Даниэль"], "ldap_values": ["Даниэль"] },
+			"homeDirectory": { "backup_values": ["/home/____dburov2"], "ldap_values": ["/home/____dburov2"] },
+			"homePhone": { "backup_values": [], "ldap_values": ["+1 303 972-6896"] },
+			"initials": { "backup_values": ["Д Б"], "ldap_values": ["Д Б"] },
+			"ipaNTSecurityIdentifier": {
+				"backup_values": ["S-1-5-21-1194863518-2697306186-2628483042-3346"],
+				"ldap_values": ["S-1-5-21-1194863518-2697306186-2628483042-3346"]
+			},
+			"ipaUserAuthType": { "backup_values": ["password"], "ldap_values": ["password"] },
+			"krbCanonicalName": {
+				"backup_values": ["____dburov2@GRANULEX.TEST"],
+				"ldap_values": ["____dburov2@GRANULEX.TEST"]
+			},
+			"krbPrincipalName": {
+				"backup_values": ["____dburov2@GRANULEX.TEST"],
+				"ldap_values": ["____dburov2@GRANULEX.TEST"]
+			},
+			"l": { "backup_values": ["Ryazan"], "ldap_values": ["Tyumen"] },
+			"loginShell": { "backup_values": ["/bin/bash"], "ldap_values": ["/bin/bash"] },
+			"mail": { "backup_values": ["____dburov2@granulex.test"], "ldap_values": ["____dburov2@granulex.test"] },
+			"memberOf": {
+				"backup_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____dburov2_mw8utxzm4rm6cfakio6,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				],
+				"ldap_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____dburov2_mw8utxzm4rm6cfakio6,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				]
+			},
+			"mobile": { "backup_values": ["+1 818 143-4347"], "ldap_values": ["+1 818 425-1848"] },
+			"objectClass": {
+				"backup_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				],
+				"ldap_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				]
+			},
+			"ou": { "backup_values": ["Management"], "ldap_values": ["People"] },
+			"pager": { "backup_values": ["+1 808 252-3730"], "ldap_values": ["+1 808 160-4995"] },
+			"postalCode": { "backup_values": ["654747"], "ldap_values": ["654226"] },
+			"preferredLanguage": { "backup_values": ["en"], "ldap_values": ["fr"] },
+			"proxyAddresses": {
+				"backup_values": ["SMTP:____DBUROV2@GRANULEX.TEST"],
+				"ldap_values": ["SMTP:____DBUROV2@GRANULEX.TEST"]
+			},
+			"rbtadp": {
+				"backup_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"],
+				"ldap_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"]
+			},
+			"rbtaou": { "backup_values": ["granulex.test"], "ldap_values": ["granulex.test"] },
+			"sn": { "backup_values": ["Буров"], "ldap_values": ["Буров"] },
+			"street": { "backup_values": ["Regent Street"], "ldap_values": ["Barickadnaya"] },
+			"telephoneNumber": { "backup_values": ["+1 303 686-3655"], "ldap_values": ["+1 303 330-6531"] },
+			"title": { "backup_values": ["Supreme Sales Rep"], "ldap_values": ["Chief Sales Rep"] },
+			"uid": { "backup_values": ["____dburov2"], "ldap_values": ["____dburov2"] },
+			"uidNumber": { "backup_values": ["390202346"], "ldap_values": ["390202346"] },
+			"x-ald-user-mac": { "backup_values": ["0:0x0:0:0x0"], "ldap_values": ["0:0x0:0:0x0"] },
+			"xaldusermacmax": { "backup_values": ["0"], "ldap_values": ["0"] },
+			"xaldusermacmin": { "backup_values": ["0"], "ldap_values": ["0"] }
+		},
+		"changed_attributes": {
+			"facsimileTelephoneNumber": "0",
+			"homePhone": "0",
+			"l": "0",
+			"mobile": "0",
+			"ou": "0",
+			"pager": "0",
+			"postalCode": "0",
+			"preferredLanguage": "0",
+			"street": "0",
+			"telephoneNumber": "0",
+			"title": "0"
+		}
+	},
+	{
+		"obj_name": "uid=____mafanasev0,cn=users,cn=accounts,dc=granulex,dc=test",
+		"change_type": "changed",
+		"all_attributes": {
+			"carLicense": { "backup_values": ["AA823F"], "ldap_values": ["AA823F"] },
+			"cn": { "backup_values": ["Марат Афанасьев"], "ldap_values": ["Марат Афанасьев"] },
+			"departmentNumber": { "backup_values": ["29"], "ldap_values": ["29"] },
+			"displayName": { "backup_values": ["Марат Афанасьев"], "ldap_values": ["Марат Афанасьев"] },
+			"employeeNumber": { "backup_values": ["95103"], "ldap_values": ["95103"] },
+			"employeeType": { "backup_values": ["Artist"], "ldap_values": ["Artist"] },
+			"facsimileTelephoneNumber": { "backup_values": ["+1 415 686-9841"], "ldap_values": ["+1 415 858-1601"] },
+			"gecos": { "backup_values": ["Марат Афанасьев"], "ldap_values": ["Марат Афанасьев"] },
+			"gidNumber": { "backup_values": ["390202344"], "ldap_values": ["390202344"] },
+			"givenName": { "backup_values": ["Марат"], "ldap_values": ["Марат"] },
+			"homeDirectory": { "backup_values": ["/home/____mafanasev0"], "ldap_values": ["/home/____mafanasev0"] },
+			"homePhone": { "backup_values": [], "ldap_values": ["+1 303 191-5249"] },
+			"initials": { "backup_values": ["М А"], "ldap_values": ["М А"] },
+			"ipaNTSecurityIdentifier": {
+				"backup_values": ["S-1-5-21-1194863518-2697306186-2628483042-3344"],
+				"ldap_values": ["S-1-5-21-1194863518-2697306186-2628483042-3344"]
+			},
+			"ipaUserAuthType": { "backup_values": ["password"], "ldap_values": ["password"] },
+			"krbCanonicalName": {
+				"backup_values": ["____mafanasev0@GRANULEX.TEST"],
+				"ldap_values": ["____mafanasev0@GRANULEX.TEST"]
+			},
+			"krbPrincipalName": {
+				"backup_values": ["____mafanasev0@GRANULEX.TEST"],
+				"ldap_values": ["____mafanasev0@GRANULEX.TEST"]
+			},
+			"l": { "backup_values": ["Samara"], "ldap_values": ["Oryol"] },
+			"loginShell": { "backup_values": ["/bin/bash"], "ldap_values": ["/bin/bash"] },
+			"mail": {
+				"backup_values": ["____mafanasev0@granulex.test"],
+				"ldap_values": ["____mafanasev0@granulex.test"]
+			},
+			"memberOf": {
+				"backup_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____mafanasev0_y24rni8zzn1m0wun,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				],
+				"ldap_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____mafanasev0_y24rni8zzn1m0wun,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				]
+			},
+			"mobile": { "backup_values": ["+1 818 609-7936"], "ldap_values": ["+1 818 490-8526"] },
+			"objectClass": {
+				"backup_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				],
+				"ldap_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				]
+			},
+			"ou": { "backup_values": ["Product Development"], "ldap_values": ["Product Testing"] },
+			"pager": { "backup_values": ["+1 808 442-1392"], "ldap_values": ["+1 808 660-9140"] },
+			"postalCode": { "backup_values": ["654808"], "ldap_values": ["654614"] },
+			"preferredLanguage": { "backup_values": ["fr"], "ldap_values": ["fr"] },
+			"proxyAddresses": {
+				"backup_values": ["SMTP:____MAFANASEV0@GRANULEX.TEST"],
+				"ldap_values": ["SMTP:____MAFANASEV0@GRANULEX.TEST"]
+			},
+			"rbtadp": {
+				"backup_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"],
+				"ldap_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"]
+			},
+			"rbtaou": { "backup_values": ["granulex.test"], "ldap_values": ["granulex.test"] },
+			"sn": { "backup_values": ["Афанасьев"], "ldap_values": ["Афанасьев"] },
+			"street": { "backup_values": ["Regent Street"], "ldap_values": ["Barickadnaya"] },
+			"telephoneNumber": { "backup_values": ["+1 303 999-1789"], "ldap_values": ["+1 303 908-8186"] },
+			"title": { "backup_values": ["Chief Evangelist"], "ldap_values": ["Senior Assistant"] },
+			"uid": { "backup_values": ["____mafanasev0"], "ldap_values": ["____mafanasev0"] },
+			"uidNumber": { "backup_values": ["390202344"], "ldap_values": ["390202344"] },
+			"x-ald-user-mac": { "backup_values": ["0:0x0:0:0x0"], "ldap_values": ["0:0x0:0:0x0"] },
+			"xaldusermacmax": { "backup_values": ["0"], "ldap_values": ["0"] },
+			"xaldusermacmin": { "backup_values": ["0"], "ldap_values": ["0"] }
+		},
+		"changed_attributes": {
+			"facsimileTelephoneNumber": "0",
+			"homePhone": "0",
+			"l": "0",
+			"mobile": "0",
+			"ou": "0",
+			"pager": "0",
+			"postalCode": "0",
+			"street": "0",
+			"telephoneNumber": "0",
+			"title": "0"
+		}
+	},
+	{
+		"obj_name": "uid=____mfedotov3,cn=users,cn=accounts,dc=granulex,dc=test",
+		"change_type": "changed",
+		"all_attributes": {
+			"carLicense": { "backup_values": ["AA803F"], "ldap_values": ["AA803F"] },
+			"cn": { "backup_values": ["Марат Федотов"], "ldap_values": ["Марат Федотов"] },
+			"departmentNumber": { "backup_values": ["12"], "ldap_values": ["12"] },
+			"displayName": { "backup_values": ["Марат Федотов"], "ldap_values": ["Марат Федотов"] },
+			"employeeNumber": { "backup_values": ["32252"], "ldap_values": ["32252"] },
+			"employeeType": { "backup_values": ["Yahoo"], "ldap_values": ["Yahoo"] },
+			"facsimileTelephoneNumber": { "backup_values": ["+1 415 625-7249"], "ldap_values": ["+1 415 291-9503"] },
+			"gecos": { "backup_values": ["Марат Федотов"], "ldap_values": ["Марат Федотов"] },
+			"gidNumber": { "backup_values": ["390202347"], "ldap_values": ["390202347"] },
+			"givenName": { "backup_values": ["Марат"], "ldap_values": ["Марат"] },
+			"homeDirectory": { "backup_values": ["/home/____mfedotov3"], "ldap_values": ["/home/____mfedotov3"] },
+			"homePhone": { "backup_values": [], "ldap_values": ["+1 303 679-4394"] },
+			"initials": { "backup_values": ["М Ф"], "ldap_values": ["М Ф"] },
+			"ipaNTSecurityIdentifier": {
+				"backup_values": ["S-1-5-21-1194863518-2697306186-2628483042-3347"],
+				"ldap_values": ["S-1-5-21-1194863518-2697306186-2628483042-3347"]
+			},
+			"ipaUserAuthType": { "backup_values": ["password"], "ldap_values": ["password"] },
+			"krbCanonicalName": {
+				"backup_values": ["____mfedotov3@GRANULEX.TEST"],
+				"ldap_values": ["____mfedotov3@GRANULEX.TEST"]
+			},
+			"krbPrincipalName": {
+				"backup_values": ["____mfedotov3@GRANULEX.TEST"],
+				"ldap_values": ["____mfedotov3@GRANULEX.TEST"]
+			},
+			"l": { "backup_values": ["Murmansk"], "ldap_values": ["Smolensk"] },
+			"loginShell": { "backup_values": ["/bin/bash"], "ldap_values": ["/bin/bash"] },
+			"mail": {
+				"backup_values": ["____mfedotov3@granulex.test"],
+				"ldap_values": ["____mfedotov3@granulex.test"]
+			},
+			"memberOf": {
+				"backup_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____mfedotov3_21ygtr4t5mioz6lz5,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				],
+				"ldap_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____mfedotov3_21ygtr4t5mioz6lz5,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				]
+			},
+			"mobile": { "backup_values": ["+1 818 354-4407"], "ldap_values": ["+1 818 494-6476"] },
+			"objectClass": {
+				"backup_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				],
+				"ldap_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				]
+			},
+			"ou": { "backup_values": ["Administrative"], "ldap_values": ["People"] },
+			"pager": { "backup_values": ["+1 808 711-9641"], "ldap_values": ["+1 808 564-9690"] },
+			"postalCode": { "backup_values": ["654784"], "ldap_values": ["654614"] },
+			"preferredLanguage": { "backup_values": ["en"], "ldap_values": ["en"] },
+			"proxyAddresses": {
+				"backup_values": ["SMTP:____MFEDOTOV3@GRANULEX.TEST"],
+				"ldap_values": ["SMTP:____MFEDOTOV3@GRANULEX.TEST"]
+			},
+			"rbtadp": {
+				"backup_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"],
+				"ldap_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"]
+			},
+			"rbtaou": { "backup_values": ["granulex.test"], "ldap_values": ["granulex.test"] },
+			"sn": { "backup_values": ["Федотов"], "ldap_values": ["Федотов"] },
+			"street": { "backup_values": ["Piccadilly"], "ldap_values": ["Piccadilly"] },
+			"telephoneNumber": { "backup_values": ["+1 303 395-8206"], "ldap_values": ["+1 303 991-8038"] },
+			"title": { "backup_values": ["Chief Consultant"], "ldap_values": ["Senior President"] },
+			"uid": { "backup_values": ["____mfedotov3"], "ldap_values": ["____mfedotov3"] },
+			"uidNumber": { "backup_values": ["390202347"], "ldap_values": ["390202347"] },
+			"x-ald-user-mac": { "backup_values": ["0:0x0:0:0x0"], "ldap_values": ["0:0x0:0:0x0"] },
+			"xaldusermacmax": { "backup_values": ["0"], "ldap_values": ["0"] },
+			"xaldusermacmin": { "backup_values": ["0"], "ldap_values": ["0"] }
+		},
+		"changed_attributes": {
+			"facsimileTelephoneNumber": "0",
+			"homePhone": "0",
+			"l": "0",
+			"mobile": "0",
+			"ou": "0",
+			"pager": "0",
+			"postalCode": "0",
+			"telephoneNumber": "0",
+			"title": "0"
+		}
+	},
+	{
+		"obj_name": "uid=____mprohorov4,cn=users,cn=accounts,dc=granulex,dc=test",
+		"change_type": "changed",
+		"all_attributes": {
+			"carLicense": { "backup_values": ["AA989F"], "ldap_values": ["AA989F"] },
+			"cn": { "backup_values": ["Марат Прохоров"], "ldap_values": ["Марат Прохоров"] },
+			"departmentNumber": { "backup_values": ["14"], "ldap_values": ["14"] },
+			"displayName": { "backup_values": ["Марат Прохоров"], "ldap_values": ["Марат Прохоров"] },
+			"employeeNumber": { "backup_values": ["32893"], "ldap_values": ["32893"] },
+			"employeeType": { "backup_values": ["Writer"], "ldap_values": ["Writer"] },
+			"facsimileTelephoneNumber": { "backup_values": ["+1 415 964-8325"], "ldap_values": ["+1 415 382-3257"] },
+			"gecos": { "backup_values": ["Марат Прохоров"], "ldap_values": ["Марат Прохоров"] },
+			"gidNumber": { "backup_values": ["390202348"], "ldap_values": ["390202348"] },
+			"givenName": { "backup_values": ["Марат"], "ldap_values": ["Марат"] },
+			"homeDirectory": { "backup_values": ["/home/____mprohorov4"], "ldap_values": ["/home/____mprohorov4"] },
+			"homePhone": { "backup_values": [], "ldap_values": ["+1 303 333-9694"] },
+			"initials": { "backup_values": ["М П"], "ldap_values": ["М П"] },
+			"ipaNTSecurityIdentifier": {
+				"backup_values": ["S-1-5-21-1194863518-2697306186-2628483042-3348"],
+				"ldap_values": ["S-1-5-21-1194863518-2697306186-2628483042-3348"]
+			},
+			"ipaUserAuthType": { "backup_values": ["password"], "ldap_values": ["password"] },
+			"krbCanonicalName": {
+				"backup_values": ["____mprohorov4@GRANULEX.TEST"],
+				"ldap_values": ["____mprohorov4@GRANULEX.TEST"]
+			},
+			"krbPrincipalName": {
+				"backup_values": ["____mprohorov4@GRANULEX.TEST"],
+				"ldap_values": ["____mprohorov4@GRANULEX.TEST"]
+			},
+			"l": { "backup_values": ["Sochi"], "ldap_values": ["Moscow"] },
+			"loginShell": { "backup_values": ["/bin/bash"], "ldap_values": ["/bin/bash"] },
+			"mail": {
+				"backup_values": ["____mprohorov4@granulex.test"],
+				"ldap_values": ["____mprohorov4@granulex.test"]
+			},
+			"memberOf": {
+				"backup_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____mprohorov4_ophymt0oyay7oaxe,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				],
+				"ldap_values": [
+					"cn=ipausers,cn=groups,cn=accounts,dc=granulex,dc=test",
+					"cn=ALDPRO - Organization units,cn=roles,cn=accounts,dc=granulex,dc=test",
+					"cn=Organization units,cn=privileges,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - Relations,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=Organization units - Read - OU,cn=permissions,cn=pbac,dc=granulex,dc=test",
+					"cn=____mprohorov4_ophymt0oyay7oaxe,cn=users_history,cn=accounts,dc=granulex,dc=test"
+				]
+			},
+			"mobile": { "backup_values": ["+1 818 272-3665"], "ldap_values": ["+1 818 617-4567"] },
+			"objectClass": {
+				"backup_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				],
+				"ldap_values": [
+					"top",
+					"person",
+					"organizationalperson",
+					"inetorgperson",
+					"inetuser",
+					"posixaccount",
+					"krbprincipalaux",
+					"krbticketpolicyaux",
+					"ipaobject",
+					"ipasshuser",
+					"x-ald-user",
+					"x-ald-user-parsec14",
+					"x-ald-audit-policy",
+					"rbta-unit",
+					"rbta-address",
+					"rbtaCustomUserAttrs",
+					"rbta-inetorgperson-ext",
+					"ruPostMailAccount",
+					"rbtaUserMeta",
+					"ipauserauthtypeclass",
+					"ipaSshGroupOfPubKeys",
+					"mepOriginEntry",
+					"ipantuserattrs"
+				]
+			},
+			"ou": { "backup_values": ["Management"], "ldap_values": ["Payroll"] },
+			"pager": { "backup_values": ["+1 808 290-3945"], "ldap_values": ["+1 808 802-4422"] },
+			"postalCode": { "backup_values": ["654895"], "ldap_values": ["654343"] },
+			"preferredLanguage": { "backup_values": ["fr"], "ldap_values": ["en"] },
+			"proxyAddresses": {
+				"backup_values": ["SMTP:____MPROHOROV4@GRANULEX.TEST"],
+				"ldap_values": ["SMTP:____MPROHOROV4@GRANULEX.TEST"]
+			},
+			"rbtadp": {
+				"backup_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"],
+				"ldap_values": ["ou=granulex.test,cn=orgunits,cn=accounts,dc=granulex,dc=test"]
+			},
+			"rbtaou": { "backup_values": ["granulex.test"], "ldap_values": ["granulex.test"] },
+			"sn": { "backup_values": ["Прохоров"], "ldap_values": ["Прохоров"] },
+			"street": { "backup_values": ["Barickadnaya"], "ldap_values": ["Bond Street"] },
+			"telephoneNumber": { "backup_values": ["+1 303 296-7380"], "ldap_values": ["+1 303 473-6550"] },
+			"title": { "backup_values": ["Principal Dreamer"], "ldap_values": ["Senior Fellow"] },
+			"uid": { "backup_values": ["____mprohorov4"], "ldap_values": ["____mprohorov4"] },
+			"uidNumber": { "backup_values": ["390202348"], "ldap_values": ["390202348"] },
+			"x-ald-user-mac": { "backup_values": ["0:0x0:0:0x0"], "ldap_values": ["0:0x0:0:0x0"] },
+			"xaldusermacmax": { "backup_values": ["0"], "ldap_values": ["0"] },
+			"xaldusermacmin": { "backup_values": ["0"], "ldap_values": ["0"] }
+		},
+		"changed_attributes": {
+			"facsimileTelephoneNumber": "0",
+			"homePhone": "0",
+			"l": "0",
+			"mobile": "0",
+			"ou": "0",
+			"pager": "0",
+			"postalCode": "0",
+			"preferredLanguage": "0",
+			"street": "0",
+			"telephoneNumber": "0",
+			"title": "0"
+		}
+	}
+]
