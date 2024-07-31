@@ -1,11 +1,33 @@
 import { json2csv } from 'json-2-csv';
 import ex from './example.json';
 import ex2 from './example2.json';
+import JSZip from 'jszip';
 
 const but = document.querySelector('.but');
 const pre = document.querySelector('.pre');
 
-but.onclick = save_report;
+but.onclick = save_zip;
+
+function save_zip() {
+	var zip = new JSZip();
+	zip.file('Hello.txt', 'Hello World\n');
+	zip.file('Hello2.txt', 'Hello World\n');
+	zip.file('Hello3.txt', 'Hello World\n');
+	// var img = zip.folder('images');
+	// img.file('/public/cherry.png', { base64: true });
+	zip.generateAsync({ type: 'blob' }).then(function (content) {
+		let date = new Date().toLocaleDateString('ru-Ru').replace(/\./g, '-');
+		let time = new Date().toLocaleTimeString('ru-Ru').replace(/:/g, '-');
+		let file = new File([content], `pdf_diff_report_${date}-${time}.tar`);
+
+		let link = document.createElement('a');
+		link.download = file.name;
+
+		link.href = URL.createObjectURL(file);
+		link.click();
+		URL.revokeObjectURL(link.href);
+	});
+}
 
 function save_report() {
 	let result = { rows: [] };
@@ -563,7 +585,7 @@ function save_diff() {
 
 	let date = new Date().toLocaleDateString('ru-Ru').replace(/\./g, '-');
 	let time = new Date().toLocaleTimeString('ru-Ru').replace(/:/g, '-');
-	let file = new File([t], `pdf_diff_report_${date}-${time}.csv`);
+	let file = new File([t], `pdf_diff_report_${date}-${time}.zip`);
 
 	let link = document.createElement('a');
 	link.download = file.name;

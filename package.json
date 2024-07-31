@@ -17,6 +17,7 @@
 		"vite": "^5.2.0"
 	},
 	"dependencies": {
-		"json-2-csv": "^5.5.4"
+		"json-2-csv": "^5.5.4",
+		"jszip": "^3.10.1"
 	}
 }
