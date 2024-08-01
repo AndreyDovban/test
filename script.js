@@ -6,7 +6,7 @@ import JSZip from 'jszip';
 const but = document.querySelector('.but');
 const pre = document.querySelector('.pre');
 
-but.onclick = save_zip;
+but.onclick = save_report;
 
 function save_zip() {
 	var zip = new JSZip();
@@ -300,16 +300,35 @@ function save_report() {
 
 	pre.innerText = t;
 
+	// let date = new Date().toLocaleDateString('ru-Ru').replace(/\./g, '-');
+	// let time = new Date().toLocaleTimeString('ru-Ru').replace(/:/g, '-');
+	// let file = new File([t], `pdf_diff_report_${date}-${time}.csv`);
+
+	// let link = document.createElement('a');
+	// link.download = file.name;
+
+	// link.href = URL.createObjectURL(file);
+	// link.click();
+	// URL.revokeObjectURL(link.href);
+
 	let date = new Date().toLocaleDateString('ru-Ru').replace(/\./g, '-');
 	let time = new Date().toLocaleTimeString('ru-Ru').replace(/:/g, '-');
-	let file = new File([t], `pdf_diff_report_${date}-${time}.csv`);
 
-	let link = document.createElement('a');
-	link.download = file.name;
+	var zip = new JSZip();
+	zip.file('Hello.txt', 'Hello World\n');
+	zip.file(`pdf_diff_report_${date}-${time}.csv`, t);
+	// var img = zip.folder('images');
+	// img.file('/public/cherry.png', { base64: true });
+	zip.generateAsync({ type: 'blob' }).then(function (content) {
+		let file = new File([content], `pdf_diff_report_${date}-${time}.tar`);
 
-	link.href = URL.createObjectURL(file);
-	link.click();
-	URL.revokeObjectURL(link.href);
+		let link = document.createElement('a');
+		link.download = file.name;
+
+		link.href = URL.createObjectURL(file);
+		link.click();
+		URL.revokeObjectURL(link.href);
+	});
 }
 
 function save_diff() {
