@@ -314,21 +314,14 @@ function save_report() {
 	let date = new Date().toLocaleDateString('ru-Ru').replace(/\./g, '-');
 	let time = new Date().toLocaleTimeString('ru-Ru').replace(/:/g, '-');
 
-	var zip = new JSZip();
-	zip.file('Hello.txt', 'Hello World\n');
-	zip.file(`pdf_diff_report_${date}-${time}.csv`, t);
-	// var img = zip.folder('images');
-	// img.file('/public/cherry.png', { base64: true });
-	zip.generateAsync({ type: 'blob' }).then(function (content) {
-		let file = new File([content], `pdf_diff_report_${date}-${time}.tar`);
+	let file = new File([t], `pdf_diff_report_${date}-${time}.csv`);
 
-		let link = document.createElement('a');
-		link.download = file.name;
+	let link = document.createElement('a');
+	link.download = file.name;
 
-		link.href = URL.createObjectURL(file);
-		link.click();
-		URL.revokeObjectURL(link.href);
-	});
+	link.href = URL.createObjectURL(file);
+	link.click();
+	URL.revokeObjectURL(link.href);
 }
 
 function save_diff() {
