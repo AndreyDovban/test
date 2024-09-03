@@ -2,28 +2,36 @@ const example = document.querySelector('#example');
 
 const ctx = example.getContext('2d');
 
-example.width = 640;
-
-example.height = 480;
+example.width = 720;
+example.height = 400;
 
 ctx.strokeRect(0, 0, example.width, example.height);
 
-// setInterval(() => {
+setInterval(() => {
+	// draw(ctx);
+}, 1000);
 
-// console.log(rand(100, 430));
-
-// }, 1000);
-
-draw(ctx, rand(100, 430));
-
-function draw(ctx, val) {
+function draw(ctx) {
+	ctx.clearRect(1, 1, example.width - 2, example.height - 2);
 	ctx.beginPath();
-
-	ctx.moveTo(638, 472);
-
-	ctx.moveTo(680, 480);
-
+	ctx.strokeStyle = '#00ff00';
+	ctx.lineWidth = 8;
+	let d;
+	for (let i = 0; i < 72; i++) {
+		d = rand(50, 380);
+		if (i == 0) {
+			ctx.moveTo(720 - i * 10, 400);
+			ctx.lineTo(720 - i * 10, d);
+		} else {
+			ctx.moveTo(720 - i * 10, 400);
+			ctx.lineTo(720 - i * 10, d);
+		}
+		// if (i == 71) {
+		// 	ctx.lineTo(720 - i * 10, 400);
+		// }
+	}
 	ctx.stroke();
+	// ctx.fill();
 
 	// ctx.strokeRect(15, 15, 266, 266);
 
