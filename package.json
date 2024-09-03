@@ -15,9 +15,5 @@
 		"stylelint-config-standard": "^36.0.0",
 		"stylelint-order": "^6.0.4",
 		"vite": "^5.2.0"
-	},
-	"dependencies": {
-		"json-2-csv": "^5.5.4",
-		"jszip": "^3.10.1"
 	}
 }
