@@ -18,7 +18,10 @@ function json2pdf(arr) {
 }
 console.log(json2pdf(data));
 
-let t = new File([json2pdf(data)], `exmple.csv`);
+let t = new File([json2pdf(data)], `exmple.csv`, {
+	// type: 'text/csv; charset=utf-8',
+	type: 'text/csv; windows-1252',
+});
 
 let link = document.createElement('a');
 link.download = t.name;
