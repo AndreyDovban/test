@@ -1,9 +1,7 @@
 import data from './data.json';
 
-console.log(data);
-
 function json2pdf(arr) {
-	let result = '';
+	let result = '\uFEFF';
 	for (let el of Object.keys(arr[0])) {
 		result += '"' + el + '";';
 	}
@@ -16,7 +14,6 @@ function json2pdf(arr) {
 	}
 	return result;
 }
-console.log(json2pdf(data));
 
 let t = new File([json2pdf(data)], `exmple.csv`, {
 	// type: 'text/csv; charset=utf-8',
@@ -27,5 +24,7 @@ let link = document.createElement('a');
 link.download = t.name;
 
 link.href = URL.createObjectURL(t);
+// var universalBOM = '\uFEFF';
+// link.setAttribute('href', 'data:text/csv; charset=utf-8,' + URL.createObjectURL(t));
 link.click();
 URL.revokeObjectURL(link.href);
