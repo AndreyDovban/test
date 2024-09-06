@@ -17,7 +17,7 @@ function json2pdf(arr) {
 
 let t = new File([json2pdf(data)], `exmple.csv`, {
 	// type: 'text/csv; charset=utf-8',
-	type: 'text/csv; windows-1252',
+	type: 'text/csv; windows-1251',
 });
 
 let link = document.createElement('a');
