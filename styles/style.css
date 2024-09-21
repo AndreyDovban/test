@@ -28,22 +28,35 @@ body {
 
 #app {
 	display: flex;
-	flex-direction: column;
 	gap: 2rem;
-	align-items: center;
-	justify-content: center;
+	align-items: start;
+	justify-content: start;
 
 	width: 100%;
 	padding: 2rem;
 }
 
-.pre {
+.out,
+.out2,
+.out3 {
 	overflow: auto;
 
-	width: 100%;
+	width: 40%;
 	height: 80vh;
 
 	color: var(--white);
 
 	background: var(--black);
+}
+
+.out {
+	width: 30%;
+}
+
+.out2 {
+	width: 40%;
+}
+
+.out3 {
+	width: 30%;
 }
