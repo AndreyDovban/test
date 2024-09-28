@@ -88,3 +88,20 @@ let hash = buidHashList(arr);
 let text3 = JSON.stringify(hash, 0, 15);
 
 out3.innerHTML = text3;
+
+/** Связанные списки  */
+
+let names = {
+	a: 1,
+	b: 2,
+	c: 3,
+};
+
+let indexes = {
+	1: 'a',
+	2: 'b',
+	3: 'c',
+};
+
+console.log(names['a'], ' : ', indexes[1]);
+console.log(names[indexes[1]], ' : ', indexes[names['a']]);
