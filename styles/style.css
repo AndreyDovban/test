@@ -49,17 +49,17 @@ body {
 
 .elem {
 	position: absolute;
+	width: 50%;
+	height: 50%;
 }
 
 .elem svg {
-	overflow: auto;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
 	border: 1px solid;
 }
 
-.elem svg path {
-	cursor: pointer;
-}
-
-.elem svg path:hover {
+.elem svg:hover path {
 	fill: #00ede5;
 }
