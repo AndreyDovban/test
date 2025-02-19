@@ -8,7 +8,7 @@ const paths = [
 
 const wrap = document.querySelector('.wrap');
 
-for (let i of [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]) {
+for (let i of new Array(3)) {
 	const block = document.createElement('div');
 
 	block.classList.add('elem');

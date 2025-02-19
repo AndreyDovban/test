@@ -1,68 +1,71 @@
 'use strict';
 
-const colors = ['gray', 'red', 'blue', 'green'];
-
-const edit = document.querySelector('.edit');
-const cmdWr = document.querySelector('.cmdWr');
+const modeButtons = document.querySelectorAll('.mode');
 const cmd = document.querySelector('.cmd');
-const cmdFalse = document.querySelector('.cmdFalse');
 
-let temp = '';
+let modeClass = '';
+let selRange = null;
 
-edit.addEventListener('input', function (e) {
-	let str = edit.innerHTML;
-	// let matches = str.replace(/<div>(.*)?<\/div>/g, '<div class="key" >$1</div>');
-	let matches = str.replace(/<div>(.*)?<\/div>/g, function name($1) {
-		// let result = $1.replace(/<div>(.*)?<\/div>/g, "<div class='key'><span>$1</span></div>");
-		let result = $1.replace(/<div>/g, '').replace(/<\/div>/g, '');
-		let temp = '';
-		let arr = result.split(':');
-
-		for (let el of arr) {
-			console.log(el);
-			temp += `<span>${el}</span>`;
+[...modeButtons].forEach(b => {
+	b.addEventListener('click', e => {
+		e.target.classList.toggle('active');
+		modeClass = [...modeButtons]
+			.map(b => (b.classList.contains('active') ? b.getAttribute('data-font') : ''))
+			.join(' ');
+		if (selRange) {
+			if (selRange.commonAncestorContainer == cmd) {
+				let spans = [...cmd.getElementsByTagName('span')];
+				let start = spans.indexOf(selRange.startContainer.parentElement);
+				let end = spans.indexOf(selRange.endContainer.parentElement);
+				for (let i = start; i <= end; i++) {
+					if (b.classList.contains('active')) {
+						spans[i].classList.add(b.getAttribute('data-font'));
+					} else {
+						spans[i].classList.remove(b.getAttribute('data-font'));
+					}
+				}
+			}
 		}
 
-		return `<div class="key">${temp}</div>`;
+		// console.log(modeClass);
+		// console.log(selRange);
 	});
-
-	if (e.inputType == 'insertParagraph') {
-		edit.innerHTML = matches;
-		edit.focus();
-		let d = document.createRange();
-		d.selectNodeContents(edit);
-		d.collapse(false);
-		const sel = window.getSelection();
-		sel.removeAllRanges();
-		sel.addRange(d);
-	}
 });
 
-// cmd.addEventListener('keypress', function (e) {
-// 	temp += e.key;
-// 	// temp = temp.trim();
-// 	if (e.key == ' ') {
-// 		console.log(temp);
-// 		let text = document.createElement('span');
-// 		text.innerText = temp;
-// 		text.style.color = randomItem(colors);
-// 		text.style.fontWeight = 'bold';
+cmd.onkeypress = e => {
+	if (e.key != 'Enter') {
+		e.preventDefault();
+		let span = document.createElement('span');
+		span.textContent = e.key;
+		span.className = modeClass;
+		e.target.append(span);
 
-// 		temp = '';
+		let sel = window.getSelection();
+		sel.collapse(span, 1);
+	} else {
+		// e.preventDefault();
+		let span = document.createElement('span');
+		let br = document.createElement('br');
+		span.append(br);
+		span.className = modeClass;
+		e.target.append(span);
 
-// 		cmdFalse.append(text);
-// 	}
-// });
+		let sel = window.getSelection();
+		sel.collapse(span, 1);
+		sel.collapseToEnd();
+		sel.toString();
+	}
+};
 
-function parseDiv(str) {
-	let s = str.split(':');
-	console.log(s);
-}
-
-function randomInt(min, max) {
-	return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function randomItem(arr) {
-	return arr[randomInt(0, arr.length - 1)];
-}
+cmd.onmouseup = () => {
+	let sel = window.getSelection();
+	if (sel.type == 'Range') {
+		selRange = sel.getRangeAt(0);
+		[...modeButtons].forEach(b => {
+			b.classList.remove('active');
+		});
+		modeClass = '';
+	} else {
+		selRange = null;
+	}
+};
